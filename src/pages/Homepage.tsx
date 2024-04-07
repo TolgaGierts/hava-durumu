@@ -131,9 +131,7 @@ const Homepage: React.FC = () => {
                     {addedCities.map((city, index) => (
                         <CityCard
                             key={index}
-                            city={{
-                                city
-                            }}
+                            city={city}
                         />
                     ))}
 

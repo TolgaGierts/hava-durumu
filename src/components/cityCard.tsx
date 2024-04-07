@@ -7,12 +7,20 @@ import {
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
+interface City {
+    country: string;
+    city: string;
+    lat: number;
+    long: number;
+}
+
+interface CityCardProps {
+    city: City;
+}
 
 
 
-const CityCard = ({ city }) => {
-
-
+const CityCard: React.FC<CityCardProps> = ({ city }) => {
 
     return (
         <>

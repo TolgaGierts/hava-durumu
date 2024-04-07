@@ -86,7 +86,7 @@ const CitySelector: React.FC<CitySelectorProps> = ({
                 )}
                 <SheetFooter>
                     <SheetClose asChild>
-                        <Button type="submit" onClick={setAddedCities}>Ekle</Button>
+                        <Button type="submit" onClick={() => setAddedCities}>Ekle</Button>
                     </SheetClose>
                     <SheetClose asChild>
                         <Button variant={"outline"} onClick={handleCancel}>Vazgec</Button>
